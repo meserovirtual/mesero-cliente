@@ -1,0 +1,28 @@
+//botones
+$clr_control_primary: #00CE5D;
+
+//degradado_principal
+$color2: #77b300;
+$color3: #446600;
+
+//@import "bourbon";
+@import "compass";
+@import "compass/reset";
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+body{
+  font-family: "Roboto";
+}
+
+.form-abm{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: -100%;
+  background-color: white;
+}
+
+.form-open{
+  right: 0 !important;
+}
