@@ -312,7 +312,9 @@
     <script>
 
         // Cargo las configuraciones para la app
-        window.appName = 'mesero';
+        // TODO: Eliminar app o appName, no dejar las dos
+        window.appName = 'mesero-insite';
+        window.app = 'mesero-insite';
         window.installPath = 'bower_components';
         window.mailAdmin = 'arielcessario@gmail.com';
         window.mailAdmins = [{mail: 'arielcessario@gmail.com'}, {mail: 'mmaneff@gmail.com'}];
@@ -411,13 +413,15 @@
                         'bower_components/angular-jwt/dist/angular-jwt.min.js',
                         'bower_components/mv-angular-utils/mv-utils.js',
                         'bower_components/mv-angular-autocomplete/mv-autocomplete.js',
-                        'bower_components/mv-angular-usuarios/mv-usuarios.js',
+                        'bower_components/mv-angular-usuarios/mv-clientes.js',
                         'bower_components/mv-angular-sucursales/mv-sucursales.js',
                         'bower_components/mv-angular-productos/mv-productos.js',
                         'bower_components/mv-angular-productos/mv-productos-insite.js',
                         'bower_components/mv-angular-comandas/mv-comandas.js',
-                        'bower_components/mv-angular-comandas/mv-cliente-insite.js',
+                        'bower_components/mv-angular-comandas/mv-mi-pedido.js',
                         'bower_components/mv-angular-contacts/mv-contacts.js',
+//                        'bower_components/angular-qr-scanner/qr-scanner.js',
+//                        'bower_components/angular-qr-scanner/src/jsqrcode-combined.min.js',
                         'includes/LangTables.js',
                         'helper/ac-helper.js',
                     ], 'segundo');
@@ -507,16 +511,21 @@
     </div>
 </div>
 
-<div class="login">
-    <usuario-logout redirect="'/productos'"></usuario-logout>
-    <div></div>
+<div class="nav">
+    <!--<button ng-click="appCtrl.limpiarHeader();">Remover</button>-->
+    <!--<button ng-click="appCtrl.decode();">Decode</button>-->
+
+    <usuario-logout ng-if="$ctrl.isLogged" redirect="'/productos'"></usuario-logout>
+    <img ng-if="!$ctrl.isLogged" src="images/login.svg" alt="">
+    <div class="separator"></div>
     <div>Total</div>
-    <div>Mi Pedido</div>
-    <div>Login</div>
-    <div>Cuenta</div>
+    <img src="images/menu.svg" ng-click="appCtrl.goToPagina('/productos');"/>
+    <img src="images/cart.svg" ng-click="appCtrl.goToPagina('/mi-pedido');"/>
+    <img src="images/llamar-al-mozo.svg" />
+    <img src="images/boton-cobrar.svg" />
 </div>
 
-
+<!--<qr-scanner ng-success="onSuccess(data)" width="400" height="300"></qr-scanner>-->
 <div ng-view class="view-container"></div>
 
 </body>
