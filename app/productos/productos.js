@@ -7,13 +7,10 @@
       .controller('ProductosCtrl', ProductosCtrl);
 
 
-  ProductosCtrl.$inject = ['$scope', 'mvProductoInsiteService'];
-  function ProductosCtrl($scope, mvProductoInsiteService) {
+  ProductosCtrl.$inject = ['$scope', 'ProductoInsiteService'];
+  function ProductosCtrl($scope, ProductoInsiteService) {
 
     var vm = this;
-    mvProductoInsiteService.listen(function(data){
-        console.log(mvProductoInsiteService.producto);
-    });
   }
 
 })();
