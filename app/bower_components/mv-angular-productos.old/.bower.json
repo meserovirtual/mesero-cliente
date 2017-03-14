@@ -1,0 +1,14 @@
+{
+  "name": "mv-angular-productos",
+  "homepage": "https://github.com/meserovirtual/mv-angular-productos",
+  "_release": "9af0d8231b",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "9af0d8231bc6cdd30d3b69ed056824f5d8c3950b"
+  },
+  "_source": "https://github.com/meserovirtual/mv-angular-productos.git",
+  "_target": "*",
+  "_originalSource": "mv-angular-productos",
+  "_direct": true
+}
