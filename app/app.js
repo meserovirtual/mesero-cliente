@@ -122,6 +122,7 @@
         vm.hideLoader = true;
         vm.sub_menu_mobile_open = false;
         vm.isLogged = false;
+        vm.comanda = {};
 
 
         // $scope.onSuccess = function(data) {
@@ -134,10 +135,10 @@
         //     console.log(error);
         // };
 
-        $rootScope.$on('login-success', function(data){
+        $rootScope.$on('login-success', function (data) {
             vm.isLogged = true;
         });
-        $rootScope.$on('login-error', function(data){
+        $rootScope.$on('login-error', function (data) {
             vm.isLogged = false;
         });
 
@@ -147,8 +148,8 @@
             localStorage.removeItem(window.app);
         };
 
-        if(UserService.getDataFromToken('usuario_id') != undefined &&
-            UserService.getDataFromToken('usuario_id') != ''){
+        if (UserService.getDataFromToken('usuario_id') != undefined &&
+            UserService.getDataFromToken('usuario_id') != '') {
             vm.isLogged = true;
         }
 
@@ -159,6 +160,19 @@
                 function (data) {
                     console.log(data);
                     console.log(UserService.getDataFromToken());
+                    ComandasService.getByMesa(UserService.getDataFromToken('mesa_id'), UserService.getDataFromToken('session_id')).then(
+                        function (data) {
+                            console.log(data);
+                            vm.comanda = data;
+                        }
+                    );
+                }
+            );
+        }else{
+            ComandasService.getByMesa(UserService.getDataFromToken('mesa_id'), UserService.getDataFromToken('session_id')).then(
+                function (data) {
+                    console.log(data);
+                    vm.comanda = data;
                 }
             );
         }
@@ -170,14 +184,29 @@
 
 
         ProductoInsiteService.listen(function (data) {
-            console.log(ProductoInsiteService.producto);
             ProductoInsiteService.producto.mesa_id = UserService.getDataFromToken('mesa_id');
             ProductoInsiteService.producto.origen_id = 1;
+            ProductoInsiteService.producto.status = 0;
             ProductoInsiteService.producto.usuario_id = UserService.getDataFromToken('usuario_id');
+            ProductoInsiteService.producto.precio = ProductoInsiteService.producto.precios[0].precio;
+
+            console.log(ProductoInsiteService.producto);
+            var comanda = {
+                mesa_id: UserService.getDataFromToken('mesa_id'),
+                origen_id: 1,
+                usuario_id: UserService.getDataFromToken('usuario_id'),
+                detalles: [ProductoInsiteService.producto]
+            };
 
 
-            ComandasService.save(ProductoInsiteService.producto).then(function (data) {
+            ComandasService.save(comanda).then(function (data) {
                 console.log(data);
+                ComandasService.getByMesa(UserService.getDataFromToken('mesa_id'), UserService.getDataFromToken('session_id')).then(
+                    function (data) {
+                        console.log(data);
+                        vm.comanda = data;
+                    }
+                );
             }).catch(function (data) {
                 console.log(data);
             });
