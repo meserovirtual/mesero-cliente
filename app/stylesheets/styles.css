@@ -1,5 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Roboto";
-/* line 5, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -103,9 +103,10 @@ body {
   display: flex;
   flex-direction: row;
   padding: 10px;
+  font-size: 18px;
 }
 
-/* line 49, ../sass/styles.scss */
+/* line 50, ../sass/styles.scss */
 .mi-pedido-extra {
   background-color: #D5D5D5;
   display: flex;
@@ -113,7 +114,7 @@ body {
   padding: 10px;
 }
 
-/* line 56, ../sass/styles.scss */
+/* line 57, ../sass/styles.scss */
 .mi-pedido-eliminar {
   height: 40px;
   width: 40px;
@@ -121,19 +122,19 @@ body {
   padding: 5px;
 }
 
-/* line 63, ../sass/styles.scss */
+/* line 64, ../sass/styles.scss */
 .mi-pedido-top-left,
 .mi-pedido-extra-left {
   flex: 8;
 }
 
-/* line 68, ../sass/styles.scss */
+/* line 69, ../sass/styles.scss */
 .mi-pedido-top-right,
 .mi-pedido-extra-right {
   flex: 1;
 }
 
-/* line 73, ../sass/styles.scss */
+/* line 74, ../sass/styles.scss */
 .nav {
   display: flex;
   flex-direction: row;
@@ -146,22 +147,22 @@ body {
   height: 30px;
   padding: 5px;
 }
-/* line 84, ../sass/styles.scss */
+/* line 85, ../sass/styles.scss */
 .nav img {
   height: 30px;
   width: 30px;
 }
-/* line 88, ../sass/styles.scss */
+/* line 89, ../sass/styles.scss */
 .nav .separator {
   flex: 8;
 }
 
-/* line 93, ../sass/styles.scss */
+/* line 94, ../sass/styles.scss */
 .view-container {
   margin-top: 40px;
 }
 
-/* line 97, ../sass/styles.scss */
+/* line 98, ../sass/styles.scss */
 .mi-pedido-titulo {
   width: calc(100% - 20px);
   background-color: #dcdcdc;
@@ -169,16 +170,16 @@ body {
   font-family: "Roboto-Bold", 'sans-serif';
   display: inherit;
   padding: 10px;
-  font-size: 7vw;
+  font-size: 11vw;
 }
 @media (min-width: 600px) {
-  /* line 97, ../sass/styles.scss */
+  /* line 98, ../sass/styles.scss */
   .mi-pedido-titulo {
     font-size: 4vw;
   }
 }
 
-/* line 112, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 .productos-insite-categoria-titulo,
 .productos-insite-producto-guar-titulo {
   width: calc(100% - 20px);
@@ -190,32 +191,32 @@ body {
   color: #76986A;
 }
 @media (min-width: 600px) {
-  /* line 112, ../sass/styles.scss */
+  /* line 113, ../sass/styles.scss */
   .productos-insite-categoria-titulo,
   .productos-insite-producto-guar-titulo {
     font-size: 4vw;
   }
 }
 
-/* line 127, ../sass/styles.scss */
+/* line 128, ../sass/styles.scss */
 .productos-insite-categoria-imagen {
   width: 100%;
   height: 12.8vw;
 }
-/* line 130, ../sass/styles.scss */
+/* line 131, ../sass/styles.scss */
 .productos-insite-categoria-imagen svg {
   width: 100% !important;
   height: 100%;
 }
 
-/* line 136, ../sass/styles.scss */
+/* line 137, ../sass/styles.scss */
 .productos-list h1 {
   Padding: 10px;
   font-family: "Roboto-Bold", 'sans-serif';
   font-size: 22px;
 }
 
-/* line 142, ../sass/styles.scss */
+/* line 143, ../sass/styles.scss */
 .buscador-container {
   background-color: black;
   width: 100%;
@@ -223,12 +224,11 @@ body {
   justify-content: space-around;
   flex-direction: row;
 }
-/* line 148, ../sass/styles.scss */
+/* line 149, ../sass/styles.scss */
 .buscador-container .input {
   display: flex;
-  width: 99%;
-  margin: 5px;
   font-size: 18px;
+  width: 100%;
   color: black;
   font-family: "Roboto-Bold", 'sans-serif';
 }
@@ -239,44 +239,54 @@ body {
   display: flex;
   flex-direction: row;
   background: #FFFFFF;
+  font-size: 17px;
+  padding: 8px;
 }
-/* line 164, ../sass/styles.scss */
+/* line 167, ../sass/styles.scss */
 .productos-insite-producto span:nth-child(1),
 .productos-insite-producto-guarnicion span:nth-child(1) {
   flex: 8;
 }
-/* line 167, ../sass/styles.scss */
+/* line 170, ../sass/styles.scss */
 .productos-insite-producto span,
 .productos-insite-producto-guarnicion span {
   padding: 5px;
 }
 
-/* line 171, ../sass/styles.scss */
-.productos-insite-producto:hover, .productos-insite-producto-guarnicion:hover {
-  cursor: pointer;
-  background-color: red !important;
+@media (min-width: 600px) {
+  /* line 177, ../sass/styles.scss */
+  .productos-insite-producto:hover, .productos-insite-producto-guarnicion:hover {
+    cursor: pointer;
+    background-color: #76986A !important;
+    color: white;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
 }
 
-/* line 176, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 .productos-insite-producto:nth-child(odd),
 .productos-insite-producto-guarnicion:nth-child(odd) {
-  background: #EEEEEE;
+  background: white;
 }
 
-/* line 181, ../sass/styles.scss */
+/* line 194, ../sass/styles.scss */
 .productos-insite-detalle {
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
 }
 
-/* line 186, ../sass/styles.scss */
+/* line 200, ../sass/styles.scss */
 .productos-insite-producto {
   font-family: "Roboto", 'sans-serif';
   font-size: 16px;
   padding: 5px;
 }
 
-/* line 192, ../sass/styles.scss */
+/* line 206, ../sass/styles.scss */
 .productos-insite-producto-top {
   display: flex;
   flex-direction: row;
@@ -287,18 +297,18 @@ body {
   color: #000000;
 }
 
-/* line 201, ../sass/styles.scss */
+/* line 215, ../sass/styles.scss */
 .productos-insite-producto-titulo {
   font-weight: bold;
 }
 
-/* line 204, ../sass/styles.scss */
+/* line 218, ../sass/styles.scss */
 .productos-insite-producto-precio {
   font-weight: bold;
   color: #90a489;
 }
 
-/* line 209, ../sass/styles.scss */
+/* line 223, ../sass/styles.scss */
 .productos-insite-producto-add-remove {
   display: flex;
   flex-direction: row;
@@ -307,38 +317,40 @@ body {
   font-size: 24px;
   font-family: "Roboto", 'sans-serif';
 }
-/* line 216, ../sass/styles.scss */
+/* line 230, ../sass/styles.scss */
 .productos-insite-producto-add-remove button {
   border-style: none;
   background: none;
 }
 
-/* line 223, ../sass/styles.scss */
+/* line 237, ../sass/styles.scss */
 .productos-insite-producto-comentario {
+  font-size: 16px;
   display: flex;
-  margin: 5px auto;
-  width: 97%;
+  margin: 13px auto;
+  width: 90%;
   background: #D8D8D8;
   border: 1px solid #979797;
   box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
   border-radius: 8px;
+  padding: 5px;
 }
 
-/* line 234, ../sass/styles.scss */
+/* line 250, ../sass/styles.scss */
 .productos-insite-producto-description {
   padding: 10px;
   font-family: "Roboto", 'sans-serif';
   font-size: 16px;
 }
 
-/* line 240, ../sass/styles.scss */
+/* line 256, ../sass/styles.scss */
 .botonera {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* line 246, ../sass/styles.scss */
+/* line 262, ../sass/styles.scss */
 .boton-agregar, .boton-cancelar, .boton-ok, .boton-eliminar, .boton-calendario {
   position: relative;
   height: 37px;
@@ -356,7 +368,7 @@ body {
   transition: all .4s ease-in-out;
 }
 
-/* line 262, ../sass/styles.scss */
+/* line 278, ../sass/styles.scss */
 .btn-agregar, .btn-cancelar, .btn-ok, .btn-eliminar, .btn-calendario {
   position: relative;
   color: #fff;
@@ -375,37 +387,37 @@ body {
   transition: all .4s ease-in-out;
 }
 
-/* line 280, ../sass/styles.scss */
+/* line 296, ../sass/styles.scss */
 .boton-cancelar, .btn-cancelar {
   background-color: #ED7161 !important;
 }
 
-/* line 283, ../sass/styles.scss */
+/* line 299, ../sass/styles.scss */
 .boton-agregar, .btn-agregar {
   background-color: #293333;
 }
 
-/* line 286, ../sass/styles.scss */
+/* line 302, ../sass/styles.scss */
 .boton-ok, .btn-ok {
   background-color: #00CE5D;
 }
 
-/* line 289, ../sass/styles.scss */
+/* line 305, ../sass/styles.scss */
 .boton-eliminar, .btn-eliminar {
   background-color: sandybrown;
 }
 
-/* line 292, ../sass/styles.scss */
+/* line 308, ../sass/styles.scss */
 .boton-calendario, .btn-calendario {
   background-color: #447EAF;
 }
 
-/* line 296, ../sass/styles.scss */
+/* line 312, ../sass/styles.scss */
 .fa {
   color: white;
 }
 
-/* line 300, ../sass/styles.scss */
+/* line 316, ../sass/styles.scss */
 .boton-agregar:hover, .boton-cancelar:hover, .boton-ok:hover, .boton-eliminar:hover, .boton-calendario:hover,
 .btn-agregar:hover, .btn-cancelar:hover, .btn-ok:hover, .btn-eliminar:hover, .btn-calendario:hover {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -422,7 +434,7 @@ body {
   transition: all .4s ease-in-out;
 }
 
-/* line 313, ../sass/styles.scss */
+/* line 329, ../sass/styles.scss */
 .btn-agregar:hover, .btn-cancelar:hover, .btn-ok:hover, .btn-eliminar:hover, .btn-calendario:hover {
   -ms-transform: scale(1, 1);
   /* IE 9 */
@@ -431,21 +443,35 @@ body {
   transform: scale(1, 1);
 }
 
-/* line 319, ../sass/styles.scss */
+/* line 335, ../sass/styles.scss */
 .input input {
   width: 100%;
   font-size: 18px !important;
   color: black !important;
   height: 30px;
   border-style: none;
-  -webkit-border-radius: 5px;
   padding: 5px;
 }
 
-/* line 330, ../sass/styles.scss */
+/* line 345, ../sass/styles.scss */
 .total-mi-pedido {
   margin: 4px auto;
   font-size: 28px;
   font-family: "Roboto-Bold", 'sans-serif';
   padding-right: 10px;
+}
+
+/* line 355, ../sass/styles.scss */
+.plato-sin-confirmar {
+  border-top: 5px solid darkred !important;
+}
+
+/* line 357, ../sass/styles.scss */
+.plato-confirmado {
+  border-top: 5px solid yellow !important;
+}
+
+/* line 360, ../sass/styles.scss */
+.plato-servido {
+  border-top: 5px #79996D solid !important;
 }
